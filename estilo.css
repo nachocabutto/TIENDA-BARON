@@ -66,7 +66,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(6, 150px);
     justify-content: center;
-    
+
 }
 
 
@@ -75,15 +75,15 @@ nav {
     text-align: center;
     margin: 0.7rem;
     padding: 0.7rem;
-    
+
 
 }
 
 
 
 .menu a:hover {
-    color:rgb(195, 144, 13) ;
-    
+    color: rgb(195, 144, 13);
+
 }
 
 /* Aca comienza  Main-Img Portada-Tabla de Información */
@@ -116,8 +116,8 @@ table {
     width: 100%;
     max-width: 1440px;
     height: 1350px;
-    
-    
+
+
 
 
     background-image: url(./Fotos/fondooscuro.jpeg);
@@ -265,9 +265,8 @@ h1 {
 
 
 .formulario {
-    width:99.5%;
+    width: 99.5%;
     background-color: rgb(195, 144, 13)
-    
 }
 
 fieldset {
@@ -276,12 +275,13 @@ fieldset {
 
 .login2 {
     width: 99.5%;
-    background-color: rgb(195, 144, 13) ;
-    height: 300px;
+    background-color: rgb(195, 144, 13);
+    height: 270px;
+
 }
 
 .fieldset {
-    background-color: rgb(195, 144, 13) ;
+    background-color: rgb(195, 144, 13);
 }
 
 /* Aca comienza Footer/Pie de pagina/Info */
@@ -419,8 +419,8 @@ h2 {
     justify-content: space-around;
 
 }
- 
- 
+
+
 .kitsfotos {
     border: solid;
     white-space: ;
@@ -452,13 +452,13 @@ h2 {
     width: 374px;
     height: 255px;
     margin: 40px;
-    padding top:: 5rem;
+    padding top: : 5rem;
 }
 
 .presetnacionesimg {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .navcuerpo {
@@ -531,14 +531,14 @@ h2 {
         height: 70px;
 
     }
-   
+
 
     .navmenuofertas {
-        display:none 
+        display: none
     }
 
     .navmenukits {
-        display:none 
+        display: none
     }
 
 }
@@ -620,18 +620,18 @@ h2 {
         list-style: none;
         text-align: center;
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 30px 30px;
         width: 375px;
         height: 90px;
-        
-        
+
+
     }
 
     .navmenu {
         font-size: medium;
     }
-    
+
     th {
         font-size: small;
     }
@@ -649,20 +649,19 @@ h2 {
 @media screen and (max-width:375px) {
     .grancontenedor {
         height: 360px;
-        
-        
+
+
     }
 
     .contenedorimagenes {
         height: 100%;
         padding: 0px;
         margin: 0px;
-        
+
     }
 
     .img-ofertas {
         height: auto
-
     }
 
     .img-kits {
@@ -674,9 +673,9 @@ h2 {
     }
 
     .fotoskits {
-        height:250px ;
-       
-       
+        height: 250px;
+
+
     }
 
     .fotoapp {
@@ -714,7 +713,7 @@ h2 {
 
 @media screen and (max-width:375px) {
     .home {
-        display: none;   
+        display: none;
     }
 
     .kitsbaron {
@@ -738,7 +737,7 @@ h2 {
     }
 
     .accesorios {
-        font-size: medium; 
+        font-size: medium;
     }
 
     .navbarbaybigote {
@@ -756,6 +755,7 @@ h2 {
     .navaccesorios {
         justify-content: center;
     }
+
     .navcabello {
         justify-content: center;
     }
@@ -766,24 +766,24 @@ h2 {
 
 
 
-    
+
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
     .contenedorkits {
         justify-content: center;
     }
 
 
     .kitsfotos {
-    width: 320px;   
+        width: 320px;
     }
 
     .imgkit {
         width: 320px;
-        
+
     }
-    
+
 
 }
 
@@ -792,4 +792,3 @@ h2 {
         text-align: center;
     }
 }
-
