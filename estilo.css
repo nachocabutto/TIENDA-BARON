@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
-
 /* Aca comienza el Header */
+
 header {
     background-color: rgb(37, 36, 36);
 }
@@ -17,19 +16,15 @@ div {
 }
 
 .menu-header {
-    width: 100%;
-
     display: grid;
     text-align: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ''boton1 logoimg1 login1'';
+    grid-template-areas: "boton1 logoimg1 login1";
 }
-
 
 .boton1 {
     width: 100%;
-
 }
 
 .buscar {
@@ -38,16 +33,14 @@ div {
 
 .logoimg {
     width: 100%;
-
 }
 
 .Logo {
     grid-area: logoimg1;
-
 }
 
 .login1 {
-    width: 95%;
+    width: 98%;
 }
 
 .login {
@@ -63,27 +56,18 @@ nav {
 .menu {
     list-style: none;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(6, 150px);
     justify-content: center;
-
 }
-
 
 .menu li {
     display: inline-block;
     text-align: center;
     margin: 0.7rem;
     padding: 0.7rem;
-
-
 }
-
-
 
 .menu a:hover {
     color: rgb(195, 144, 13);
-
 }
 
 /* Aca comienza  Main-Img Portada-Tabla de Información */
@@ -99,7 +83,6 @@ main {
 .tablacontainer {
     width: 150px auto;
     background: rgb(37, 36, 36);
-
 }
 
 table {
@@ -116,14 +99,8 @@ table {
     width: 100%;
     max-width: 1440px;
     height: 1350px;
-
-
-
-
     background-image: url(./Fotos/fondooscuro.jpeg);
     justify-content: space-around;
-
-
     display: grid;
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -131,12 +108,8 @@ table {
         "fotobarbaybigote fotoofertas"
         "fotobarbaybigote fotoapp"
         "fotoskits fotoapp"
-        "marcas marcas"
-    ;
-
-
+        "marcas marcas";
 }
-
 
 .fotobarbaybigote {
     width: 100%;
@@ -152,11 +125,10 @@ table {
     width: 100%;
     height: 310px;
     grid-area: fotoofertas;
-
 }
 
 .fotoofertas:hover {
-    transform: scale(1.1, 1.11);
+    transform: scale(1.1, 1.1);
 }
 
 .fotoskits {
@@ -169,7 +141,6 @@ table {
 
 .fotoskits:hover {
     transform: scale(1.1, 1.1);
-
 }
 
 .fotoapp {
@@ -177,8 +148,6 @@ table {
     height: 605px;
     grid-area: fotoapp;
 }
-
-
 
 .marcas {
     width: 200%;
@@ -188,25 +157,11 @@ table {
     position: relative;
     bottom: 50px;
     left: 5%;
-
 }
 
-
-
-.fotobarbaybigote:hover {
+.fotobarbaybigote:hover, .fotoofertas:hover, .fotoskits:hover {
     border: solid white 1px;
 }
-
-.fotoofertas:hover {
-    border: solid white 1px;
-}
-
-.fotoskits:hover {
-    border: solid white 1px;
-}
-
-
-
 
 /* Aca comienzan Formularios de Registro y Log-in */
 
@@ -255,17 +210,12 @@ h1 {
     font-family: sans-serif;
 }
 
-.login {
+.login, .registrarse {
     color: rgb(195, 144, 13);
 }
-
-.registrarse {
-    color: rgb(195, 144, 13);
-}
-
 
 .formulario {
-    width: 99.5%;
+    width:auto;
     background-color: rgb(195, 144, 13)
 }
 
@@ -276,8 +226,7 @@ fieldset {
 .login2 {
     width: 99.5%;
     background-color: rgb(195, 144, 13);
-    height: 270px;
-
+    height: 300px;
 }
 
 .fieldset {
@@ -307,8 +256,6 @@ h3 {
     align-items: center;
 }
 
-
-
 p {
     color: white;
     margin: 3px;
@@ -320,8 +267,6 @@ table {
     background-color: rgb(37, 36, 36);
     justify-content: center;
 }
-
-
 
 .contactenos2 {
     margin: 20px;
@@ -345,9 +290,7 @@ table {
 .piedepagina {
     background-color: rgb(37, 36, 36);
     width: 100%;
-    height: 100%;
     height: 300px;
-
     display: flex;
     align-content: space-around
 }
@@ -365,14 +308,10 @@ table {
 /* Trabajo en paginas secundarios + arreglos */
 
 .paginaenproceso {
-
     width: 100;
     height: 300px;
     background-color: rgb(195, 144, 13);
-
 }
-
-
 
 h2 {
     font-family: 'Bebas Neue';
@@ -386,7 +325,6 @@ h2 {
     justify-content: space-between;
     padding: 30px 60px;
     background-color: rgb(195, 144, 13);
-
 }
 
 .home {
@@ -406,7 +344,6 @@ h2 {
     background-color: rgb(195, 144, 13);
 }
 
-
 .barbaybigote {
     color: rgb(37, 36, 36)
 }
@@ -417,18 +354,12 @@ h2 {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
-
 
 .kitsfotos {
     border: solid;
-    white-space: ;
     margin: 40px;
-    padding top: 5rem;
-
 }
-
 
 .navbarbaybigote {
     display: flex;
@@ -436,7 +367,6 @@ h2 {
     justify-content: space-between;
     padding: 30px 60px;
     background-color: rgb(195, 144, 13);
-
 }
 
 .contenedorbarbaybigote {
@@ -452,7 +382,6 @@ h2 {
     width: 374px;
     height: 255px;
     margin: 40px;
-    padding top: : 5rem;
 }
 
 .presetnacionesimg {
@@ -467,7 +396,6 @@ h2 {
     justify-content: space-between;
     padding: 30px 60px;
     background-color: rgb(37, 36, 36);
-
 }
 
 .navcabello {
@@ -484,7 +412,6 @@ h2 {
     justify-content: space-between;
     padding: 30px 60px;
     background-color: rgb(37, 36, 36);
-
 }
 
 .navofertas {
@@ -495,137 +422,94 @@ h2 {
     background-color: rgb(37, 36, 36);
 }
 
-
-
 /* Aca comienza querries Tablet-768px */
 
 @media screen and (max-width:768px) {
     .menu-header {
-        display: grid;
-        text-align: center;
-        align-items: center;
         grid-template-columns: 1fr;
-        grid grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "boton1"
             "logoimg1"
             "login1"
+    }
 
+    .logoimg2 {
+        width: 300px;
     }
 
     .boton1 {
         display: none;
     }
 
+    .login1 {
+        width: 100%;
+    }
+
+    .login, .registrarse {
+        font-size: medium;
+    }
 }
-
-
 
 @media screen and (max-width:768px) {
     .menu {
-        list-style: none;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        
         height: 70px;
-
     }
 
-
-    .navmenuofertas {
+    .navmenuofertas .navmenukits {
         display: none
     }
-
-    .navmenukits {
-        display: none
-    }
-
 }
 
 @media screen and (max-width:768px) {
     .contenedorimagenes {
-        display: grid;
         height: 620px;
-
-
         grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "fotobarbaybigote"
             "fotoofertas"
-            "fotoskits"
-            "marcas";
-
+            "fotoskits";
     }
 
-    .fotoapp {
+    .fotoapp, .marcas, .fotobarbaybigote {
         display: none;
     }
-
-    .marcas {
-        display: none;
-    }
-
-    .fotobarbaybigote {
-        display: none;
-    }
-
-
 }
 
 @media screen and (max-width:768px) {
     .piedepagina {
-        background-color: rgb(37, 36, 36);
-        width: 100%;
         height: 100%;
         align-items: center;
         flex-direction: column;
-        align-content: space-around
     }
 
     .parrafo {
         display: none;
-
     }
 
+    .h3 {
+        padding:0px;
+    }
 }
 
 /* Aca comienza querries Mobile-375px */
 
 @media screen and (max-width:375px) {
-    .menu-header {
-        display: grid;
-        text-align: center;
-        align-items: center;
-        grid-template-columns: 1fr;
-        grid grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "boton1"
-            "logoimg1"
-            "login1"
+    .logoimg2 {
+        width: 250px;
 
     }
 
-    .boton1 {
-        display: none;
+    .login, .registrarse {
+        font-size: x-small;
     }
 
-}
-
-
-
-@media screen and (max-width:375px) {
     .menu {
-        list-style: none;
-        text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 30px 30px;
         width: 375px;
         height: 90px;
-
-
     }
 
     .navmenu {
@@ -636,159 +520,94 @@ h2 {
         font-size: small;
     }
 
-    .navmenuofertas {
+    .navmenuofertas, .navmenukits {
         display: none;
     }
-
-    .navmenukits {
-        display: none;
-    }
-
 }
 
 @media screen and (max-width:375px) {
     .grancontenedor {
         height: 360px;
-
-
     }
 
     .contenedorimagenes {
         height: 100%;
         padding: 0px;
         margin: 0px;
-
     }
 
-    .img-ofertas {
+    .img-ofertas, .img-kits {
         height: auto
     }
 
-    .img-kits {
-        height: auto
-    }
-
-    .fotoofertas {
+    .fotoofertas, .fotoskits {
         height: 250px;
     }
-
-    .fotoskits {
-        height: 250px;
-
-
     }
-
-    .fotoapp {
-        display: none;
-    }
-
-    .marcas {
-        display: none;
-    }
-
-    .fotobarbaybigote {
-        display: none;
-    }
-
-
-}
-
-
-@media screen and (max-width:375px) {
-    .piedepagina {
-        background-color: rgb(37, 36, 36);
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        flex-direction: column;
-        align-content: space-around
-    }
-
-    .parrafo {
-        display: none;
-
-    }
-
-}
 
 @media screen and (max-width:375px) {
     .home {
         display: none;
     }
 
-    .kitsbaron {
+    .kitsbaron, .barbaybigote, .cuerpo, .cabello, .ofertas, .accesorios {
         font-size: medium;
     }
-
-    .barbaybigote {
-        font-size: medium;
-    }
-
-    .cuerpo {
-        font-size: medium;
-    }
-
-    .cabello {
-        font-size: medium;
-    }
-
-    .ofertas {
-        font-size: medium;
-    }
-
-    .accesorios {
-        font-size: medium;
-    }
-
-    .navbarbaybigote {
-        justify-content: center;
-    }
-
-    .navkits {
-        justify-content: center;
-    }
-
-    .navofertas {
-        justify-content: center;
-    }
-
-    .navaccesorios {
-        justify-content: center;
-    }
-
-    .navcabello {
-        justify-content: center;
-    }
-
-    .navcuerpo {
-        justify-content: center;
-    }
-
-
-
-
 }
 
 @media screen and (max-width:375px) {
-    .contenedorkits {
+    .navkits, .navofertas, .navcuerpo, .navcabello, .navbarbaybigote, .navaccesorios {
         justify-content: center;
     }
 
-
-    .kitsfotos {
+    .kitsfotos, .imgkit {
         width: 320px;
     }
-
-    .imgkit {
-        width: 320px;
-
     }
-
-
-}
 
 @media screen and (max-width:375px) {
     .paginaenproceso {
         text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .menu {
+        width: auto;
+    }
+
+    .contenedorbarbaybigote {
+        width: fit-content;
+    }
+
+    .barbafotos, .barbafotos1{
+        width: 100%;
+    }
+
+    .contenedorkits {
+        width:auto ;
+    }
+
+    .kitsfotos, .imgkit {
+        width: 250px;
+    }
+    .contactenos {
+        width: 200px;
+    }
+
+    .contactenos2 {
+       margin: 10px;
+       padding: 20px;
+    }
+
+    .h3 {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .marcatiendabaron {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
     }
 }
