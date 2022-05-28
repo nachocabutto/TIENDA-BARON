@@ -47,28 +47,24 @@ div {
     grid-area: login1;
 }
 
+.login1 a:hover {
+    color: white;
+}
+
 /* Aca comienza el Menu Nav */
 
-nav {
-    background-color: rgb(37, 36, 36);
+
+.navbar li {
+    font-size: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+    color: white;
 }
 
-.menu {
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-}
-
-.menu li {
-    display: inline-block;
-    text-align: center;
-    margin: 0.7rem;
-    padding: 0.7rem;
-}
-
-.menu a:hover {
+.navbar a:hover {
     color: rgb(195, 144, 13);
 }
+
 
 /* Aca comienza  Main-Img Portada-Tabla de Información */
 
@@ -159,7 +155,9 @@ table {
     left: 5%;
 }
 
-.fotobarbaybigote:hover, .fotoofertas:hover, .fotoskits:hover {
+.fotobarbaybigote:hover,
+.fotoofertas:hover,
+.fotoskits:hover {
     border: solid white 1px;
 }
 
@@ -210,12 +208,13 @@ h1 {
     font-family: sans-serif;
 }
 
-.login, .registrarse {
+.login,
+.registrarse {
     color: rgb(195, 144, 13);
 }
 
 .formulario {
-    width:auto;
+    width: auto;
     background-color: rgb(195, 144, 13)
 }
 
@@ -252,71 +251,44 @@ h3 {
     padding: 30px;
     margin: 20px;
     font-family: 'Bebas Neue';
-    font-size: larger;
-    align-items: center;
+}
+
+.text-center {
+    margin: auto;
+    padding: 1rem;
 }
 
 p {
     color: white;
-    margin: 3px;
-    padding: 3px;
     width: 100%;
 }
 
-table {
-    background-color: rgb(37, 36, 36);
-    justify-content: center;
-}
 
 .contactenos2 {
-    margin: 20px;
     font-family: 'Bebas Neue'
 }
 
-.telefono {
-    margin: 5px;
+.telefono, .email, .direccion {
     font-family: none;
-}
-
-.email {
-    margin: 5px;
-    font-family: none;
-}
-
-.direccion {
-    font-family: none;
-}
-
-.piedepagina {
-    background-color: rgb(37, 36, 36);
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-content: space-around
-}
-
-.marcatiendabaron {
-    width: 50%;
-    text-align: center;
-}
-
-.contactenos {
-    width: 50%;
-    text-align: center;
 }
 
 /* Trabajo en paginas secundarios + arreglos */
 
 .paginaenproceso {
-    width: 100;
     height: 300px;
     background-color: rgb(195, 144, 13);
+    align-items: center;
 }
 
 h2 {
     font-family: 'Bebas Neue';
     text-align: center;
     margin: 8%;
+}
+
+.construyendo {
+    position: relative;
+    top: 100px;
 }
 
 .navkits {
@@ -327,21 +299,14 @@ h2 {
     background-color: rgb(195, 144, 13);
 }
 
-.home {
+.btn {
+    align-items: center;
     position: absolute;
     right: 60px;
 }
 
 .kitsbaron {
     color: rgb(37, 36, 36);
-}
-
-.nabkits {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px;
-    background-color: rgb(195, 144, 13);
 }
 
 .barbaybigote {
@@ -354,6 +319,7 @@ h2 {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: rgb(195, 144, 13);
 }
 
 .kitsfotos {
@@ -375,7 +341,6 @@ h2 {
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .barbafotos {
@@ -390,33 +355,8 @@ h2 {
     grid-template-rows: repeat(5, 1fr);
 }
 
-.navcuerpo {
+.navcuerpo, .navcabello, .navaccesorios, .navofertas {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px;
-    background-color: rgb(37, 36, 36);
-}
-
-.navcabello {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px;
-    background-color: rgb(37, 36, 36);
-}
-
-.navaccesorios {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px;
-    background-color: rgb(37, 36, 36);
-}
-
-.navofertas {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 30px 60px;
     background-color: rgb(37, 36, 36);
@@ -445,21 +385,24 @@ h2 {
         width: 100%;
     }
 
-    .login, .registrarse {
+    .login,
+    .registrarse {
         font-size: medium;
     }
-}
-
-@media screen and (max-width:768px) {
-    .menu {
-        
-        height: 70px;
+    .btn.btn-outline-secondary {
+        display: none;
     }
 
-    .navmenuofertas .navmenukits {
-        display: none
+    .navkits,
+    .navofertas,
+    .navcuerpo,
+    .navcabello,
+    .navbarbaybigote,
+    .navaccesorios {
+        justify-content: center;
     }
 }
+
 
 @media screen and (max-width:768px) {
     .contenedorimagenes {
@@ -471,7 +414,9 @@ h2 {
             "fotoskits";
     }
 
-    .fotoapp, .marcas, .fotobarbaybigote {
+    .fotoapp,
+    .marcas,
+    .fotobarbaybigote {
         display: none;
     }
 }
@@ -485,11 +430,7 @@ h2 {
 
     .parrafo {
         display: none;
-    }
-
-    .h3 {
-        padding:0px;
-    }
+    } 
 }
 
 /* Aca comienza querries Mobile-375px */
@@ -497,10 +438,10 @@ h2 {
 @media screen and (max-width:375px) {
     .logoimg2 {
         width: 250px;
-
     }
 
-    .login, .registrarse {
+    .login,
+    .registrarse {
         font-size: x-small;
     }
 
@@ -520,7 +461,8 @@ h2 {
         font-size: small;
     }
 
-    .navmenuofertas, .navmenukits {
+    .navmenuofertas,
+    .navmenukits {
         display: none;
     }
 }
@@ -536,34 +478,34 @@ h2 {
         margin: 0px;
     }
 
-    .img-ofertas, .img-kits {
+    .img-ofertas,
+    .img-kits {
         height: auto
     }
 
-    .fotoofertas, .fotoskits {
+    .fotoofertas,
+    .fotoskits {
         height: 250px;
     }
-    }
+}
 
 @media screen and (max-width:375px) {
-    .home {
-        display: none;
-    }
-
-    .kitsbaron, .barbaybigote, .cuerpo, .cabello, .ofertas, .accesorios {
+    .kitsbaron,
+    .barbaybigote,
+    .cuerpo,
+    .cabello,
+    .ofertas,
+    .accesorios {
         font-size: medium;
     }
 }
 
 @media screen and (max-width:375px) {
-    .navkits, .navofertas, .navcuerpo, .navcabello, .navbarbaybigote, .navaccesorios {
-        justify-content: center;
-    }
-
-    .kitsfotos, .imgkit {
+    .kitsfotos,
+    .imgkit {
         width: 320px;
     }
-    }
+}
 
 @media screen and (max-width:375px) {
     .paginaenproceso {
@@ -580,24 +522,27 @@ h2 {
         width: fit-content;
     }
 
-    .barbafotos, .barbafotos1{
+    .barbafotos,
+    .barbafotos1 {
         width: 100%;
     }
 
     .contenedorkits {
-        width:auto ;
+        width: auto;
     }
 
-    .kitsfotos, .imgkit {
+
+    .imgkit {
         width: 250px;
     }
+
     .contactenos {
         width: 200px;
     }
 
     .contactenos2 {
-       margin: 10px;
-       padding: 20px;
+        margin: 10px;
+        padding: 20px;
     }
 
     .h3 {
@@ -609,5 +554,5 @@ h2 {
         width: 100%;
         margin: 5px;
         padding: 5px;
-    }
+    } 
 }
