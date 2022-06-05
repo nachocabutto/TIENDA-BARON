@@ -1,0 +1,362 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Aca comienza el Header */
+header {
+  background-color: #252424; }
+  header .menu-header {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "boton1 logoimg1 login1"; }
+    header .menu-header .boton1 {
+      width: 100%; }
+    header .menu-header .buscar {
+      grid-area: boton1; }
+    header .menu-header .logoimg {
+      width: 100%; }
+  header .login1 {
+    width: 98%; }
+  header div.login1 a:hover {
+    color: white; }
+  header a {
+    color: white;
+    font-size: 20px; }
+
+/* Aca comienza el Menu Nav */
+.navbar li {
+  font-size: 28px;
+  padding-left: 38px;
+  padding-right: 38px;
+  color: white; }
+  .navbar li .navbar a:hover {
+    color: #c3900d; }
+
+ul {
+  list-style: none;
+  color: white;
+  font-family: 'Bebas Neue';
+  font-weight: bold; }
+
+h4 {
+  color: white;
+  font-weight: bold; }
+
+/* Aca comienza  Main-Img Portada-Tabla de Información */
+main {
+  background-color: #252424; }
+  main .portada {
+    width: 100%; }
+  main table {
+    width: 100%;
+    text-align: center;
+    margin: 0.3rem;
+    padding: 0.3rem; }
+    main table .tablacontainer {
+      width: 150px auto;
+      background: #252424; }
+
+/* Aca comienzan Tabla */
+tr {
+  background: #252424; }
+
+th {
+  color: #c3900d;
+  font-family: 'Bebas Neue';
+  margin-left: 200px;
+  font-size: x-large;
+  justify-content: center; }
+
+/* Aca comienza Contenedor de imagenes */
+.contenedorimagenes {
+  background-color: #252424;
+  width: 100%;
+  max-width: 1440px;
+  height: 1350px;
+  background-image: url(./Fotos/fondooscuro.jpeg);
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fotobarbaybigote fotoofertas" "fotobarbaybigote fotoapp" "fotoskits fotoapp" "marcas marcas"; }
+  .contenedorimagenes .fotobarbaybigote {
+    width: 100%;
+    height: 530px;
+    grid-area: fotobarbaybigote; }
+    .contenedorimagenes .fotobarbaybigote .fotobarbaybigote:hover {
+      transform: scale(1.1, 1.1); }
+  .contenedorimagenes .fotobarbaybigote:hover {
+    transform: scale(1.1, 1.1); }
+  .contenedorimagenes .fotoofertas {
+    width: 100%;
+    height: 310px;
+    grid-area: fotoofertas; }
+  .contenedorimagenes .fotoofertas:hover {
+    transform: scale(1.1, 1.1); }
+  .contenedorimagenes .fotoskits {
+    width: 100%;
+    height: 380px;
+    grid-area: fotoskits;
+    position: relative;
+    bottom: 80px; }
+  .contenedorimagenes .fotoskits:hover {
+    transform: scale(1.1, 1.1); }
+  .contenedorimagenes .fotoapp {
+    width: 100%;
+    height: 605px;
+    grid-area: fotoapp; }
+  .contenedorimagenes .marcas {
+    width: 200%;
+    height: 359px;
+    border: solid;
+    color: #c3900d;
+    position: relative;
+    bottom: 50px;
+    left: 5%; }
+  .contenedorimagenes .fotobarbaybigote:hover,
+  .contenedorimagenes .fotoofertas:hover,
+  .contenedorimagenes .fotoskits:hover {
+    border: solid white 1px; }
+
+/* Aca comienzan Formularios de Registro y Log-in */
+.formulario {
+  width: auto;
+  background-color: #c3900d; }
+  .formulario form {
+    background-color: #252424;
+    margin: 10px;
+    padding: 10px; }
+  .formulario .fieldset {
+    background-color: #c3900d;
+    padding: 10px; }
+  .formulario legend {
+    color: #c3900d;
+    padding: 20px; }
+  .formulario .sexo, .formulario .datos {
+    color: aliceblue; }
+
+/* Aca comienza Footer/Pie de pagina/Info */
+footer {
+  background-color: #252424; }
+  footer .Quienessomos {
+    color: #c3900d;
+    padding: 5px;
+    margin: 5px;
+    font-size: small;
+    margin-left: 10px; }
+  footer h3 {
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    font-family: 'Bebas Neue'; }
+  footer .text-center {
+    margin: auto;
+    padding: 1rem; }
+  footer p {
+    color: white;
+    width: 100%; }
+  footer .contactenos2 {
+    font-family: 'Bebas Neue'; }
+  footer .telefono, footer .email, footer .direccion {
+    font-family: none; }
+
+/* Trabajo en paginas secundarios + arreglos */
+.navaccesorios {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  background-color: #252424; }
+  .navaccesorios .accesorios {
+    color: beige; }
+
+.btn {
+  align-items: center;
+  position: absolute;
+  right: 60px; }
+
+.paginaenproceso {
+  height: 300px;
+  background-color: #c3900d;
+  align-items: center; }
+  .paginaenproceso .construyendo {
+    position: relative;
+    top: 100px; }
+
+h2 {
+  font-family: 'Bebas Neue';
+  text-align: center;
+  margin: 8%; }
+
+.contenedorkits {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #c3900d; }
+  .contenedorkits .kitsfotos {
+    border: solid;
+    margin: 40px; }
+
+.contenedorbarbaybigote {
+  background-color: white;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap; }
+  .contenedorbarbaybigote .barbafotos {
+    width: 374px;
+    height: 255px;
+    margin: 40px; }
+
+.barbafotos {
+  width: 374px;
+  height: 255px;
+  margin: 40px; }
+
+.presetnacionesimg {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr); }
+
+/* Aca comienza querries Tablet-768px */
+
+@media screen and (max-width:768px) {
+  .menu-header {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "boton1"
+          "logoimg1"
+          "login1"
+  }
+
+  .logoimg2 {
+      width: 300px;
+  }
+
+  .boton1 {
+      display: none;
+  }
+
+  .login1 {
+      width: 100%;
+  }
+
+  .login, .registrarse {
+      font-size: medium;
+  }
+}
+
+
+
+
+
+    .btn.btn-outline-secondary {
+      display: none; }
+    .navkits,
+    .navofertas,
+    .navcuerpo,
+    .navcabello,
+    .navbarbaybigote,
+    .navaccesorios {
+      justify-content: center; } 
+
+@media screen and (max-width: 768px) {
+  .contenedorimagenes {
+    height: 620px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fotoofertas" "fotoskits"; }
+  .fotoapp,
+  .marcas,
+  .fotobarbaybigote {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .piedepagina {
+    height: 100%;
+    align-items: center;
+    flex-direction: column; }
+  .parrafo {
+    display: none; } }
+
+/* Aca comienza querries Mobile-375px */
+@media screen and (max-width: 375px) {
+  .logoimg2 {
+    width: 250px; }
+  .login,
+  .registrarse {
+    font-size: x-small; }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px;
+    width: 375px;
+    height: 90px; }
+  .navmenu {
+    font-size: medium; }
+  th {
+    font-size: small; }
+  .navmenuofertas,
+  .navmenukits {
+    display: none; } }
+
+@media screen and (max-width: 375px) {
+  .grancontenedor {
+    height: 360px; }
+  .contenedorimagenes {
+    height: 100%;
+    padding: 0px;
+    margin: 0px; }
+  .img-ofertas,
+  .img-kits {
+    height: auto; }
+  .fotoofertas,
+  .fotoskits {
+    height: 250px; } }
+
+@media screen and (max-width: 375px) {
+  .kitsbaron,
+  .barbaybigote,
+  .cuerpo,
+  .cabello,
+  .ofertas,
+  .accesorios {
+    font-size: medium; } }
+
+@media screen and (max-width: 375px) {
+  .kitsfotos,
+  .imgkit {
+    width: 320px; } }
+
+@media screen and (max-width: 375px) {
+  .paginaenproceso {
+    text-align: center; } }
+
+@media screen and (max-width: 320px) {
+  .menu {
+    width: auto; }
+  .contenedorbarbaybigote {
+    width: fit-content; }
+  .barbafotos,
+  .barbafotos1 {
+    width: 100%; }
+  .contenedorkits {
+    width: auto; }
+  .imgkit {
+    width: 250px; }
+  .contactenos {
+    width: 200px; }
+  .contactenos2 {
+    margin: 10px;
+    padding: 20px; }
+  .h3 {
+    margin: 15px;
+    padding: 10px; }
+  .marcatiendabaron {
+    width: 100%;
+    margin: 5px;
+    padding: 5px; } }
