@@ -1,0 +1,31 @@
+footer {
+    background-color: rgb(37, 36, 36);
+    .Quienessomos {
+        color: rgb(195, 144, 13);
+        padding: 5px;
+        margin: 5px;
+        font-size: small;
+        margin-left: 10px;
+    }
+    h3 {
+        color: white;
+        padding: 30px;
+        margin: 20px;
+        font-family: 'Bebas Neue';
+    }
+    .text-center {
+        margin: auto;
+        padding: 1rem;
+    }
+    p {
+        color: white;
+        width: 100%;
+    }
+    .contactenos2 {
+        font-family: 'Bebas Neue'
+    }
+    .telefono, .email, .direccion {
+        font-family: none;
+    }
+}
+
