@@ -1,18 +1,21 @@
 /* Aca comienza  Main-Img Portada-Tabla de Información */
 
 main {
-    background-color: rgb(37, 36, 36);
+    background-color: $coloroscuro;
+
     .portada {
         width: 100%;
-    } 
+    }
+
     table {
         width: 100%;
         text-align: center;
         margin: 0.3rem;
         padding: 0.3rem;
+
         .tablacontainer {
             width: 150px auto;
-            background: rgb(37, 36, 36);
+            background: $coloroscuro;
         }
     }
 }
@@ -20,10 +23,11 @@ main {
 /* Aca comienzan Tabla */
 
 tr {
-    background: rgb(37, 36, 36);
+    background: $coloroscuro;
+
     th {
-        color: rgb(195, 144, 13);
-        font-family: 'Bebas Neue';
+        color: $colordorado;
+        font-family: $letrabaron;
         margin-left: 200px;
         font-size: x-large;
         justify-content: center;
@@ -33,7 +37,7 @@ tr {
 /* Aca comienza Contenedor de imagenes */
 
 .contenedorimagenes {
-    background-color: rgb(37, 36, 36);
+    background-color: $coloroscuro;
     width: 100%;
     max-width: 1440px;
     height: 1350px;
@@ -47,67 +51,67 @@ tr {
         "fotobarbaybigote fotoapp"
         "fotoskits fotoapp"
         "marcas marcas";
-        .fotobarbaybigote {
-            width: 100%;
-            height: 530px;
-            grid-area: fotobarbaybigote;
-        .fotobarbaybigote:hover {
-                transform: scale(1.1, 1.1);
-            }
-        }   
+
+    .fotobarbaybigote {
+        width: 100%;
+        grid-area: fotobarbaybigote;
+
         .fotobarbaybigote:hover {
             transform: scale(1.1, 1.1);
         }
-        .fotoofertas {
-            width: 100%;
-            height: 310px;
-            grid-area: fotoofertas;
-        } 
+    }
 
-        .fotoofertas:hover {
+    .fotobarbaybigote:hover {
         transform: scale(1.1, 1.1);
-        }
+    }
 
-        .fotoskits {
-            width: 100%;
-            height: 380px;
-            grid-area: fotoskits;
-            position: relative;
-            bottom: 80px;
-       }
-}
+    .fotoofertas {
+        width: 100%;
+        grid-area: fotoofertas;
+    }
 
+    .fotoofertas:hover {
+        transform: scale(1.1, 1.1);
+    }
 
-.fotoskits:hover {
-    transform: scale(1.1, 1.1);
-}
-.fotoapp {
-    width: 100%;
-    height: 605px;
-    grid-area: fotoapp;
-}
+    .fotoskits {
+        width: 100%;
+        grid-area: fotoskits;
+        position: relative;
+        bottom: 80px;
+    }
 
-.marcas {
-    width: 200%;
-    height: 359px;
-    border: solid;
-    color: rgb(195, 144, 13);
-    position: relative;
-    bottom: 50px;
-    left: 5%;
-}
+    .fotoskits:hover {
+        transform: scale(1.1, 1.1);
+    }
 
-.fotobarbaybigote:hover,
-.fotoofertas:hover,
-.fotoskits:hover {
-    border: solid white 1px;
-}
+    .fotoapp {
+        width: 100%;
+        grid-area: fotoapp;
+        position: relative;
+        top: 13px;
+    }
 
-.con.fotoskits {
-    width: 100%;
-    height: 380px;
-    grid-area: fotoskits;
-    position: relative;
-    bottom: 80px;
+    .fotoskits {
+        width: 100%;
+        grid-area: fotoskits;
+        position: relative;
+        bottom: 80px;
 
+    }
+
+    .marcas {
+        width: 200%;
+        border: solid;
+        color: $colordorado;
+        position: relative;
+        bottom: 50px;
+        left: 5%;
+    }
+
+    .fotobarbaybigote:hover,
+    .fotoofertas:hover,
+    .fotoskits:hover {
+        border: solid white 1px;
+    }
 }

@@ -7,52 +7,36 @@
 header {
   background-color: #252424; }
 
-header .menu-header {
+.menu-header {
   display: grid;
   text-align: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "boton1 logoimg1 login1"; }
-
-header .menu-header .boton1 {
-  width: 100%; }
-
-header .menu-header .buscar {
-  grid-area: boton1; }
-
-header .menu-header .logoimg {
-  width: 100%; }
-
-header .login1 .login, header .registrarse {
-  width: 98%;
-  color: #c3900d; }
-
-header div.login1 a:hover {
-  color: white; }
-
-header a {
-  color: white;
-  font-size: 20px; }
+  .menu-header .boton1 {
+    width: 100%; }
+  .menu-header .buscar {
+    grid-area: boton1; }
+  .menu-header .logoimg {
+    width: 100%; }
+  .menu-header .login1,
+  .menu-header .login,
+  .menu-header .registrarse {
+    width: 98%;
+    color: #c3900d;
+    font-family: "Bebas Neue"; }
 
 /* Aca comienza el Menu Nav */
-.navbar li {
-  font-size: 28px;
-  padding-left: 38px;
-  padding-right: 38px;
-  color: white; }
-
-.navbar li .navbar a:hover {
-  color: #c3900d; }
-
 ul {
   list-style: none;
   color: white;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-weight: bold; }
-
-h4 {
-  color: white;
-  font-weight: bold; }
+  ul li {
+    font-size: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+    color: white; }
 
 /* Aca comienza  Main-Img Portada-Tabla de Información */
 main {
@@ -73,7 +57,7 @@ tr {
   background: #252424; }
   tr th {
     color: #c3900d;
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue";
     margin-left: 200px;
     font-size: x-large;
     justify-content: center; }
@@ -92,7 +76,6 @@ tr {
   grid-template-areas: "fotobarbaybigote fotoofertas" "fotobarbaybigote fotoapp" "fotoskits fotoapp" "marcas marcas"; }
   .contenedorimagenes .fotobarbaybigote {
     width: 100%;
-    height: 530px;
     grid-area: fotobarbaybigote; }
     .contenedorimagenes .fotobarbaybigote .fotobarbaybigote:hover {
       transform: scale(1.1, 1.1); }
@@ -100,69 +83,62 @@ tr {
     transform: scale(1.1, 1.1); }
   .contenedorimagenes .fotoofertas {
     width: 100%;
-    height: 310px;
     grid-area: fotoofertas; }
   .contenedorimagenes .fotoofertas:hover {
     transform: scale(1.1, 1.1); }
   .contenedorimagenes .fotoskits {
     width: 100%;
-    height: 380px;
     grid-area: fotoskits;
     position: relative;
     bottom: 80px; }
+  .contenedorimagenes .fotoskits:hover {
+    transform: scale(1.1, 1.1); }
+  .contenedorimagenes .fotoapp {
+    width: 100%;
+    grid-area: fotoapp;
+    position: relative;
+    top: 13px; }
+  .contenedorimagenes .fotoskits {
+    width: 100%;
+    grid-area: fotoskits;
+    position: relative;
+    bottom: 80px; }
+  .contenedorimagenes .marcas {
+    width: 200%;
+    border: solid;
+    color: #c3900d;
+    position: relative;
+    bottom: 50px;
+    left: 5%; }
+  .contenedorimagenes .fotobarbaybigote:hover,
+  .contenedorimagenes .fotoofertas:hover,
+  .contenedorimagenes .fotoskits:hover {
+    border: solid white 1px; }
 
-.fotoskits:hover {
-  transform: scale(1.1, 1.1); }
-
-.fotoapp {
-  width: 100%;
-  height: 605px;
-  grid-area: fotoapp; }
-
-.marcas {
-  width: 200%;
-  height: 359px;
-  border: solid;
-  color: #c3900d;
-  position: relative;
-  bottom: 50px;
-  left: 5%; }
-
-.fotobarbaybigote:hover,
-.fotoofertas:hover,
-.fotoskits:hover {
-  border: solid white 1px; }
-
-.con.fotoskits {
-  width: 100%;
-  height: 380px;
-  grid-area: fotoskits;
-  position: relative;
-  bottom: 80px; }
-
+/* Aca comienza Footer/Pie de pagina/Info */
 footer {
   background-color: #252424; }
-  footer .Quienessomos {
-    color: #c3900d;
-    padding: 5px;
-    margin: 5px;
-    font-size: small;
-    margin-left: 10px; }
-  footer h3 {
-    color: white;
-    padding: 30px;
-    margin: 20px;
-    font-family: 'Bebas Neue'; }
   footer .text-center {
     margin: auto;
-    padding: 1rem; }
-  footer p {
+    padding: 1rem;
     color: white;
-    width: 100%; }
-  footer .contactenos2 {
-    font-family: 'Bebas Neue'; }
-  footer .telefono, footer .email, footer .direccion {
-    font-family: none; }
+    font-family: "Bebas Neue"; }
+    footer .text-center .Quienessomos {
+      color: #c3900d;
+      padding: 5px;
+      margin: 5px;
+      font-size: small;
+      margin-left: 10px; }
+    footer .text-center .contactenos2 {
+      font-family: 'Bebas Neue'; }
+    footer .text-center .telefono,
+    footer .text-center .email,
+    footer .text-center .direccion {
+      font-family: "Bebas Neue";
+      font-size: medium; }
+    footer .text-center p {
+      color: white;
+      width: 100%; }
 
 /* Aca comienzan Formularios de Registro y Log-in */
 .formulario {
@@ -172,48 +148,17 @@ footer {
     background-color: #252424;
     margin: 10px;
     padding: 10px; }
-
-.fieldset {
-  background-color: #c3900d;
-  padding: 10px; }
-
-legend {
-  color: #c3900d;
-  padding: 20px; }
-
-.sexo, .datos {
-  color: aliceblue; }
-
-label {
-  color: white; }
-
-/* Aca comienza Footer/Pie de pagina/Info */
-.Quienesomos {
-  color: #c3900d;
-  padding: 5px;
-  margin: 5px;
-  font-size: small;
-  margin-left: 10px; }
-
-h3 {
-  color: white;
-  padding: 30px;
-  margin: 20px;
-  font-family: 'Bebas Neue'; }
-
-.text-center {
-  margin: auto;
-  padding: 1rem; }
-
-p {
-  color: white;
-  width: 100%; }
-
-.contactenos2 {
-  font-family: 'Bebas Neue'; }
-
-.telefono, .email, .direccion {
-  font-family: none; }
+    .formulario form fieldset {
+      background-color: #252424;
+      padding: 10px; }
+      .formulario form fieldset legend {
+        color: #c3900d;
+        padding: 20px; }
+      .formulario form fieldset .sexo,
+      .formulario form fieldset .datos {
+        color: aliceblue; }
+      .formulario form fieldset label {
+        color: white; }
 
 /* Trabajo en paginas secundarios + arreglos */
 .navaccesorios {
@@ -223,7 +168,7 @@ p {
   background-color: #252424; }
   .navaccesorios .accesorios {
     color: beige; }
-  .navaccesorios .btn.btn-outline-secondary {
+  .navaccesorios .btn.btn.btn-outline-secondary {
     align-items: center;
     position: absolute;
     right: 60px; }
@@ -234,12 +179,10 @@ p {
   align-items: center; }
   .paginaenproceso .construyendo {
     position: relative;
-    top: 100px; }
-
-h2 {
-  font-family: 'Bebas Neue';
-  text-align: center;
-  margin: 8%; }
+    top: 100px;
+    font-size: x-large;
+    font-family: 'Bebas Neue';
+    text-align: center; }
 
 .contenedorkits {
   display: flex;
@@ -268,7 +211,7 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr); }
 
-/* Aca comienza querries Tablet-768px */
+/* Aca comienza queries Tablet-768px */
 @media screen and (max-width: 768px) {
   header .menu-header {
     grid-template-columns: 1fr;
@@ -279,18 +222,19 @@ h2 {
     display: none; }
   .login1 {
     width: 100%; }
-  .login, .registrarse {
-    font-size: medium; } }
-
-.btn.btn-outline-secondary {
-  display: none; }
-
-.navaccesorios {
-  justify-content: center; }
+    .login1 .login,
+    .login1 .registrarse {
+      font-size: medium; }
+  .btn.btn.btn-outline-secondary {
+    display: none; }
+  .navaccesorios {
+    justify-content: center; } }
 
 @media screen and (max-width: 768px) {
+  .grancontenedor {
+    height: 700px; }
   .contenedorimagenes {
-    height: 620px;
+    height: auto;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "fotoofertas" "fotoskits"; }
@@ -310,14 +254,14 @@ h2 {
 @media screen and (max-width: 375px) {
   .grancontenedor {
     height: 360px; }
-  .contenedorimagenes {
-    height: auto;
-    padding: 0px;
-    margin: 0px; }
-  .img-ofertas {
-    height: auto; }
-  .img-kits {
-    height: auto; }
+    .grancontenedor .contenedorimagenes {
+      height: 700px;
+      padding: 0px;
+      margin: 0px; }
+      .grancontenedor .contenedorimagenes .img-ofertas {
+        height: auto; }
+      .grancontenedor .contenedorimagenes .img-kits {
+        height: auto; }
   .contenedorimagenes.fotoofertas {
     height: 170px; }
   .contenedorimagenes .fotoskits {
@@ -325,7 +269,10 @@ h2 {
 
 @media screen and (max-width: 375px) {
   .accesorios {
-    font-size: medium; } }
+    font-size: large; } }
+
+.construyendo {
+  font-size: smaller; }
 
 @media screen and (max-width: 375px) {
   .kitsfotos,
@@ -335,19 +282,19 @@ h2 {
 @media screen and (max-width: 320px) {
   .contenedorbarbaybigote {
     width: fit-content; }
-  .barbafotos,
-  .barbafotos1 {
-    width: 100%; }
+    .contenedorbarbaybigote .barbafotos,
+    .contenedorbarbaybigote .barbafotos1 {
+      width: 100%; }
   .contenedorkits {
     width: auto; }
-  .imgkit {
-    width: 250px; }
+    .contenedorkits .imgkit {
+      width: 250px; }
   .contactenos {
     width: 200px; }
   .contactenos2 {
     margin: 10px;
     padding: 20px; }
-  .h3 {
+  h3 {
     margin: 15px;
     padding: 10px; }
   .marcatiendabaron {

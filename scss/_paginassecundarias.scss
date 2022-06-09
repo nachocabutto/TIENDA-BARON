@@ -1,0 +1,65 @@
+/* Trabajo en paginas secundarios + arreglos */
+.navaccesorios {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: $coloroscuro ;
+
+    .accesorios {
+        color: beige;
+    }
+
+    .btn.btn.btn-outline-secondary {
+        align-items: center;
+        position: absolute;
+        right: 60px;
+    }
+}
+
+.paginaenproceso {
+    height: 300px;
+    background-color: rgb(195, 144, 13);
+    align-items: center;
+
+    .construyendo {
+        position: relative;
+        top: 100px;
+        font-size: x-large;
+        font-family: 'Bebas Neue';
+        text-align: center;
+    }
+}
+
+.contenedorkits {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(195, 144, 13);
+
+    .kitsfotos {
+        border: solid;
+        margin: 40px;
+    }
+}
+
+.contenedorbarbaybigote {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .barbafotos {
+        width: 374px;
+        height: 255px;
+        margin: 40px;
+    }
+}
+
+.presetnacionesimg {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}

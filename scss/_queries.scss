@@ -1,0 +1,161 @@
+/* Aca comienza queries Tablet-768px */
+
+
+@media screen and (max-width:768px) {
+    header .menu-header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "boton1"
+            "logoimg1"
+            "login1"
+
+    }
+
+    .logoimg2 {
+        width: 300px;
+    }
+
+    .boton1 {
+        display: none;
+    }
+
+    .login1 {
+        width: 100%;
+
+        .login,
+        .registrarse {
+            font-size: medium;
+        }
+    }
+
+    .btn.btn.btn-outline-secondary {
+        display: none;
+    }
+
+    .navaccesorios {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .grancontenedor{
+        height: 700px;
+    }
+    .contenedorimagenes {
+        height:auto;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "fotoofertas"
+            "fotoskits";
+
+        .fotoapp,
+        .marcas,
+        .fotobarbaybigote {
+            display: none;
+        }
+    }
+}
+
+
+/* Aca comienza querries Mobile-375px */
+
+@media screen and (max-width:375px) {
+
+    .login,
+    .registrarse {
+        font-size: x-small;
+    }
+
+    table {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .grancontenedor {
+        height: 360px;;
+
+        .contenedorimagenes {
+            height: 700px;
+            padding: 0px;
+            margin: 0px;
+            
+
+            .img-ofertas {
+                height: auto
+            }
+
+            .img-kits {
+                height: auto
+            }
+        }
+    }
+
+    .contenedorimagenes.fotoofertas {
+        height: 170px;
+    }
+
+    .contenedorimagenes .fotoskits {
+        bottom: 192px
+    }
+}
+
+@media screen and (max-width:375px) {
+    .accesorios {
+        font-size: large;
+    }
+}
+
+.construyendo {
+    font-size: smaller;
+}
+
+@media screen and (max-width:375px) {
+
+    .kitsfotos,
+    .imgkit {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contenedorbarbaybigote {
+        width: fit-content;
+
+        .barbafotos,
+        .barbafotos1 {
+            width: 100%;
+        }
+    }
+
+    .contenedorkits {
+        width: auto;
+
+        .imgkit {
+            width: 250px;
+        }
+    }
+
+    .contactenos {
+        width: 200px;
+    }
+
+    .contactenos2 {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h3 {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .marcatiendabaron {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+}

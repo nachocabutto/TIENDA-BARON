@@ -1,42 +1,48 @@
 header {
-    background-color: #252424; }
-    header .menu-header {
-      display: grid;
-      text-align: center;
-      align-items: center;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "boton1 logoimg1 login1"; }
-      header .menu-header .boton1 {
-        width: 100%; }
-      header .menu-header .buscar {
-        grid-area: boton1; }
-      header .menu-header .logoimg {
-        width: 100%; }
-    header .login1 .login, header .registrarse {
-      width: 98%;
-      color: #c3900d; }
-    header div.login1 a:hover {
-      color: white; }
-    header a {
-      color: white;
-      font-size: 20px; }
-  
-  /* Aca comienza el Menu Nav */
-  .navbar li {
+  background-color: $coloroscuro;
+}
+
+.menu-header {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "boton1 logoimg1 login1";
+
+  .boton1 {
+    width: 100%;
+  }
+
+  .buscar {
+    grid-area: boton1;
+  }
+
+  .logoimg {
+    width: 100%;
+  }
+
+  .login1,
+  .login,
+  .registrarse {
+    width: 98%;
+    color: $colordorado;
+    font-family: $letrabaron;
+  }
+}
+
+
+/* Aca comienza el Menu Nav */
+
+ul {
+  list-style: none;
+  color: white;
+  font-family: $letrabaron;
+  font-weight: bold;
+
+  li {
     font-size: 28px;
     padding-left: 38px;
     padding-right: 38px;
-    color: white; }
-    .navbar li .navbar a:hover {
-      color: #c3900d; }
-  
-  ul {
-    list-style: none;
     color: white;
-    font-family: 'Bebas Neue';
-    font-weight: bold; }
-  
-  h4 {
-    color: white;
-    font-weight: bold; }
-  
+  }
+}
