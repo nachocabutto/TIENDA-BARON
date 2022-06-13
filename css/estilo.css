@@ -115,36 +115,32 @@ tr {
 /* Aca comienza Footer/Pie de pagina/Info */
 footer {
   background-color: #252424; }
-  footer .text-center {
+  footer .text-center, footer .redes {
     margin: auto;
     padding: 1rem;
     color: white;
     font-family: "Bebas Neue"; }
-    footer .text-center .Quiénessomos {
+    footer .text-center .Quiénessomos, footer .redes .Quiénessomos {
       color: #c3900d;
       padding: 5px;
       margin: 5px;
       font-size: small;
       margin-left: 10px; }
-    footer .text-center .contactenos2 {
+    footer .text-center .contactenos2, footer .redes .contactenos2 {
       font-family: 'Bebas Neue'; }
-    footer .text-center .telefono,
+    footer .text-center .telefono, footer .redes .telefono,
     footer .text-center .email,
-    footer .text-center .direccion {
+    footer .redes .email,
+    footer .text-center .direccion,
+    footer .redes .direccion {
       font-family: "Bebas Neue";
       font-size: medium; }
-    footer .text-center .sociales {
-      text-align: center; }
-    footer .text-center .sociales li {
-      display: inline-block; }
-    footer .text-center p {
+    footer .text-center p, footer .redes p {
       color: white;
       width: 100%; }
 
 .redes {
   text-align: center;
-  margin: auto;
-  padding: 1rem;
   position: relative;
   bottom: 30px; }
 

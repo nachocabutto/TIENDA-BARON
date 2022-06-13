@@ -27,14 +27,6 @@ footer {
             font-size: medium;
         }
 
-        .sociales {
-            text-align: center;
-        }
-
-        .sociales li {
-            display: inline-block;
-        }
-
         p {
             color: $colorblanco;
             width: 100%;
@@ -43,9 +35,8 @@ footer {
 }
 
 .redes {
+    @extend .text-center;
     text-align:center;
-    margin: auto;
-    padding: 1rem;
     position: relative;
     bottom: 30px;
 }
