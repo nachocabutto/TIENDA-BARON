@@ -8,5 +8,5 @@ DESAFIO : SASS II + SEO
 *Se han utilizado todos los tips sobre SEO aprendidos en clase,Titles,Metasetiquetas "description" y "keywords" y correctos encabezados en todas las paginas html.
 *Se corrigió ruta URL
 *Se hiceron tambien modificacions graficas
-*Se agregaron iconos de redes sociales en footer con sus respectivos enlaces(Facebook/Instagram)
+*Se agregaron iconos de redes sociales en footer con sus respectivos enlaces(Facebook/Instagram)-Solo en index,se harán arreglos graficos y se pondrán los iconos en todas las paginas.
 
