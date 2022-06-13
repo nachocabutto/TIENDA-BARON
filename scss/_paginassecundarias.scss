@@ -17,27 +17,36 @@
 }
 
 .paginaenproceso {
-    height: 300px;
-    background-color: rgb(195, 144, 13);
+    background-image: url(../Fotos/trabajando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
 
     .construyendo {
         position: relative;
-        top: 100px;
-        font-size: x-large;
+        top: 260px;
+        font-size: 50px;
         font-family: 'Bebas Neue';
         text-align: center;
+        color:$colorblanco;
     }
 }
 
-.contenedorkits {
+@mixin contenedorproductos ($color) {
+    background-color: $color;
     display: flex;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(195, 144, 13);
+    justify-content: space-around;  
+}
 
+.contenedorkits {
+    @include contenedorproductos($coloroscuro);
+    
     .kitsfotos {
         border: solid;
         margin: 40px;
@@ -45,12 +54,8 @@
 }
 
 .contenedorbarbaybigote {
-    background-color: white;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-
+    @include contenedorproductos($colorblanco);
+    
     .barbafotos {
         width: 374px;
         height: 255px;

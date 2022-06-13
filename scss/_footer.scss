@@ -5,10 +5,10 @@ footer {
     .text-center {
         margin: auto;
         padding: 1rem;
-        color: white;
+        color: $colorblanco;
         font-family: $letrabaron;
 
-        .Quienessomos {
+        .Quiénessomos {
             color: $colordorado;
             padding: 5px;
             margin: 5px;
@@ -27,12 +27,39 @@ footer {
             font-size: medium;
         }
 
-        p {
-            color: white;
-            width: 100%;
+        .sociales {
+            text-align: center;
         }
 
-        
-    }
+        .sociales li {
+            display: inline-block;
+        }
 
+        p {
+            color: $colorblanco;
+            width: 100%;
+        }
+    }
+}
+
+.redes {
+    text-align:center;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    bottom: 30px;
+}
+
+.sociales {
+    text-align: center;
+    padding-right: 50px;
+    margin: auto;   
+}
+
+.sociales li {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    padding-left: 25px;
+    
 }

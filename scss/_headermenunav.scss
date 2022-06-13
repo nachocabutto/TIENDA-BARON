@@ -1,33 +1,28 @@
 header {
   background-color: $coloroscuro;
-}
-
-.menu-header {
-  display: grid;
-  text-align: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "boton1 logoimg1 login1";
-
-  .boton1 {
-    width: 100%;
-  }
-
-  .buscar {
-    grid-area: boton1;
-  }
-
-  .logoimg {
-    width: 100%;
-  }
-
-  .login1,
-  .login,
-  .registrarse {
-    width: 98%;
-    color: $colordorado;
-    font-family: $letrabaron;
-  }
+  .menu-header {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "boton1 logoimg1 login1";
+    .boton1, .logoimg {
+      width: 100%;
+    }
+  
+    .buscar {
+      grid-area: boton1;
+    }
+  
+    .login1,
+    .login,
+    .registrarse {
+      width: 98%;
+      color: $colordorado;
+      font-family: $letrabaron;
+      font-size: large;
+    }
+ }
 }
 
 

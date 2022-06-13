@@ -41,19 +41,19 @@
 @media screen and (max-width:768px) {
     .grancontenedor{
         height: 700px;
-    }
-    .contenedorimagenes {
-        height:auto;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "fotoofertas"
-            "fotoskits";
-
-        .fotoapp,
-        .marcas,
-        .fotobarbaybigote {
-            display: none;
+        .contenedorimagenes {
+            height:auto;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "fotoofertas"
+                "fotoskits";
+    
+            .fotoapp,
+            .marcas,
+            .fotobarbaybigote {
+                display: none;
+            }
         }
     }
 }
@@ -84,10 +84,7 @@
             margin: 0px;
             
 
-            .img-ofertas {
-                height: auto
-            }
-
+            .img-ofertas,
             .img-kits {
                 height: auto
             }
