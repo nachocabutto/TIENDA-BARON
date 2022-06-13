@@ -6,6 +6,7 @@ Tienda Barón fue diseñada para los hombres más exigentes, que dan consideraci
 DESAFIO : SASS II + SEO
 *Se han utilizado etiquetas @include e @import en scss "paginas secundarias"
 *Se han utilizado todos los tips sobre SEO aprendidos en clase,Titles,Metasetiquetas "description" y "keywords" y correctos encabezados en todas las paginas html.
+*Se corrigió ruta URL
 *Se hiceron tambien modificacions graficas
 *Se agregaron iconos de redes sociales en footer con sus respectivos enlaces(Facebook/Instagram)
 
