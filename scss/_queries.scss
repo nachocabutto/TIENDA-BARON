@@ -1,3 +1,12 @@
+
+/* Aca comienza queries */
+@media screen and (max-width:1438px) {
+video {
+    display: none;
+}
+}
+
+
 /* Aca comienza queries Tablet-768px */
 
 
@@ -55,6 +64,12 @@
                 display: none;
             }
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    video {
+        display: none;
     }
 }
 

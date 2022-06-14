@@ -24,6 +24,9 @@ header {
       font-family: "Bebas Neue";
       font-size: large; }
 
+.login1 a:hover {
+  color: azure; }
+
 /* Aca comienza el Menu Nav */
 ul {
   list-style: none;
@@ -155,6 +158,11 @@ footer {
   width: 20px;
   padding-left: 25px; }
 
+h6 {
+  text-align: center;
+  color: grey;
+  margin-left: 25px; }
+
 /* Aca comienzan Formularios de Registro y Log-in */
 .formulario {
   width: auto;
@@ -164,13 +172,22 @@ footer {
     background-color: #252424;
     margin: 10px;
     padding: 10px; }
-    .formulario form fieldset legend {
-      color: #c3900d;
-      padding: 20px; }
-    .formulario form fieldset .sexo,
-    .formulario form fieldset .datos,
-    .formulario form fieldset .label {
-      color: aliceblue; }
+    .formulario form fieldset {
+      min-height: 100vh; }
+      .formulario form fieldset legend {
+        color: #c3900d;
+        padding: 20px; }
+      .formulario form fieldset .sexo,
+      .formulario form fieldset .datos,
+      .formulario form fieldset .label {
+        color: aliceblue; }
+      .formulario form fieldset video, .formulario form fieldset .loginvideo {
+        position: relative;
+        left: 700px;
+        bottom: 600px;
+        width: 600px; }
+      .formulario form fieldset .loginvideo {
+        bottom: 180px; }
 
 /* Trabajo en paginas secundarios + arreglos */
 .navaccesorios {
@@ -228,6 +245,11 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr); }
 
+/* Aca comienza queries */
+@media screen and (max-width: 1438px) {
+  video, .formulario form fieldset .loginvideo {
+    display: none; } }
+
 /* Aca comienza queries Tablet-768px */
 @media screen and (max-width: 768px) {
   header .menu-header {
@@ -259,6 +281,10 @@ footer {
       .grancontenedor .contenedorimagenes .marcas,
       .grancontenedor .contenedorimagenes .fotobarbaybigote {
         display: none; } }
+
+@media screen and (max-width: 768px) {
+  video, .formulario form fieldset .loginvideo {
+    display: none; } }
 
 /* Aca comienza querries Mobile-375px */
 @media screen and (max-width: 375px) {
