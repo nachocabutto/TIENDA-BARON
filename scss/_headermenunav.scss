@@ -23,7 +23,7 @@ header {
       font-size: large;
     }
     .login1 a:hover {
-      color: $coloblanco;
+      color:white;
     }
  }
 }
@@ -34,7 +34,7 @@ header {
 
 ul {
   list-style: none;
-  color: white;
+  color: $colorblanco;
   font-family: $letrabaron;
   font-weight: bold;
 
@@ -42,6 +42,6 @@ ul {
     font-size: 28px;
     padding-left: 38px;
     padding-right: 38px;
-    color: white;
+    color: $colorblanco;
   }
 }

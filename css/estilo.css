@@ -23,9 +23,8 @@ header {
       color: #c3900d;
       font-family: "Bebas Neue";
       font-size: large; }
-
-.login1 a:hover {
-  color: azure; }
+    header .menu-header .login1 a:hover {
+      color: white; }
 
 /* Aca comienza el Menu Nav */
 ul {
@@ -76,6 +75,7 @@ tr {
   grid-template-areas: "fotobarbaybigote fotoofertas" "fotobarbaybigote fotoapp" "fotoskits fotoapp" "marcas marcas"; }
   .contenedorimagenes .fotobarbaybigote {
     width: 100%;
+    height: 527px;
     grid-area: fotobarbaybigote; }
     .contenedorimagenes .fotobarbaybigote .fotobarbaybigote:hover {
       transform: scale(1.1, 1.1); }
@@ -181,13 +181,12 @@ h6 {
       .formulario form fieldset .datos,
       .formulario form fieldset .label {
         color: aliceblue; }
-      .formulario form fieldset video, .formulario form fieldset .loginvideo {
+      .formulario form fieldset video {
         position: relative;
         left: 700px;
-        bottom: 600px;
-        width: 600px; }
-      .formulario form fieldset .loginvideo {
-        bottom: 180px; }
+        bottom: 600px; }
+      .formulario form fieldset .videologin {
+        bottom: 200px; }
 
 /* Trabajo en paginas secundarios + arreglos */
 .navaccesorios {
@@ -247,7 +246,7 @@ h6 {
 
 /* Aca comienza queries */
 @media screen and (max-width: 1438px) {
-  video, .formulario form fieldset .loginvideo {
+  video {
     display: none; } }
 
 /* Aca comienza queries Tablet-768px */
@@ -283,7 +282,7 @@ h6 {
         display: none; } }
 
 @media screen and (max-width: 768px) {
-  video, .formulario form fieldset .loginvideo {
+  video {
     display: none; } }
 
 /* Aca comienza querries Mobile-375px */

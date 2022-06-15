@@ -23,7 +23,7 @@
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    
+
 
     .construyendo {
         position: relative;
@@ -31,7 +31,7 @@
         font-size: 50px;
         font-family: 'Bebas Neue';
         text-align: center;
-        color:$colorblanco;
+        color: $colorblanco;
     }
 }
 
@@ -41,12 +41,12 @@
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 
 .contenedorkits {
     @include contenedorproductos($coloroscuro);
-    
+
     .kitsfotos {
         border: solid;
         margin: 40px;
@@ -55,7 +55,7 @@
 
 .contenedorbarbaybigote {
     @include contenedorproductos($colorblanco);
-    
+
     .barbafotos {
         width: 374px;
         height: 255px;

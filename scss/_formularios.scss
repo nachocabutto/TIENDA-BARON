@@ -4,8 +4,8 @@
 .formulario {
 	width: auto;
 	background-color: $colordorado;
-	padding: 1px ;
-	
+	padding: 1px;
+
 
 	form {
 		background-color: $coloroscuro;
@@ -13,9 +13,9 @@
 		padding: 10px;
 
 		fieldset {
-			@extend form ;
+			@extend form;
 			min-height: 100vh;
-			
+
 
 			legend {
 				color: $colordorado;
@@ -31,18 +31,13 @@
 			video {
 				position: relative;
 				left: 700px;
-				bottom:600px;
-				width: 600px;
-				
-			}
-
-			.loginvideo {
-				@extend video;
-				bottom: 180px;
+				bottom: 600px;
 
 			}
 
+			.videologin {
+				bottom: 200px;
+			}
 		}
 	}
 }
-
