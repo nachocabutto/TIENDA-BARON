@@ -10,3 +10,8 @@ DESAFIO : SASS II + SEO
 *Se hiceron tambien modificacions graficas
 *Se agregaron iconos de redes sociales en footer con sus respectivos enlaces(Facebook/Instagram)-Solo en index,se harán arreglos graficos y se pondrán los iconos en todas las paginas.
 
+DESAFIO: TERCERA ENTREGA FINAL
+*Se comprimieron todas las imagenes
+*Se hicieron correciones graficas y agregados,como video en formularios e iconos de facebook e instagram en todas las paginas,otros detalles
+*Se hicieron correcciones de ruteo
+
