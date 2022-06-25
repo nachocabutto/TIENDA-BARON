@@ -1,19 +1,26 @@
 header {
   background-color: $coloroscuro;
+
   .menu-header {
     display: grid;
     text-align: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "boton1 logoimg1 login1";
-    .boton1, .logoimg {
+
+    .boton1,
+    .logoimg {
       width: 100%;
     }
-  
+
+    .logoimg1 {
+      padding: 8px;
+    }
+
     .buscar {
       grid-area: boton1;
     }
-  
+
     .login1,
     .login,
     .registrarse {
@@ -22,10 +29,11 @@ header {
       font-family: $letrabaron;
       font-size: large;
     }
+
     .login1 a:hover {
-      color:white;
+      color: white;
     }
- }
+  }
 }
 
 
@@ -44,4 +52,8 @@ ul {
     padding-right: 38px;
     color: $colorblanco;
   }
+}
+
+.nav-link:hover {
+  color: $colordorado;
 }

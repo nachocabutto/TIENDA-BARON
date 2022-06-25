@@ -12,8 +12,11 @@ header {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "boton1 logoimg1 login1"; }
-    header .menu-header .boton1, header .menu-header .logoimg {
+    header .menu-header .boton1,
+    header .menu-header .logoimg {
       width: 100%; }
+    header .menu-header .logoimg1 {
+      padding: 8px; }
     header .menu-header .buscar {
       grid-area: boton1; }
     header .menu-header .login1,
@@ -38,6 +41,9 @@ ul {
     padding-right: 38px;
     color: white; }
 
+.nav-link:hover {
+  color: #c3900d; }
+
 /* Aca comienza  Main-Img Portada-Tabla de Información */
 main {
   background-color: #252424; }
@@ -53,14 +59,16 @@ main {
       background: #252424; }
 
 /* Aca comienzan Tabla */
-tr {
-  background: #252424; }
-  tr th {
-    color: #c3900d;
-    font-family: "Bebas Neue";
-    margin-left: 200px;
-    font-size: x-large;
-    justify-content: center; }
+main table {
+  margin: 0px; }
+  main table tr {
+    background: #252424; }
+    main table tr th {
+      color: #c3900d;
+      font-family: "Bebas Neue";
+      margin-left: 200px;
+      font-size: x-large;
+      justify-content: center; }
 
 /* Aca comienza Contenedor de imagenes */
 .contenedorimagenes {
@@ -74,16 +82,17 @@ tr {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "fotobarbaybigote fotoofertas" "fotobarbaybigote fotoapp" "fotoskits fotoapp" "marcas marcas"; }
   .contenedorimagenes .fotobarbaybigote {
-    width: 100%;
-    height: 527px;
-    grid-area: fotobarbaybigote; }
-    .contenedorimagenes .fotobarbaybigote .fotobarbaybigote:hover {
-      transform: scale(1.1, 1.1); }
+    grid-area: fotobarbaybigote;
+    height: 528px; }
+    .contenedorimagenes .fotobarbaybigote .animate__animated {
+      width: 100%;
+      height: 527px; }
   .contenedorimagenes .fotobarbaybigote:hover {
     transform: scale(1.1, 1.1); }
   .contenedorimagenes .fotoofertas {
-    width: 100%;
     grid-area: fotoofertas; }
+    .contenedorimagenes .fotoofertas .img-ofertas {
+      width: 100%; }
   .contenedorimagenes .fotoofertas:hover {
     transform: scale(1.1, 1.1); }
   .contenedorimagenes .fotoskits {
@@ -91,6 +100,9 @@ tr {
     grid-area: fotoskits;
     position: relative;
     bottom: 80px; }
+    .contenedorimagenes .fotoskits .img-kits {
+      width: 100%;
+      height: 375px; }
   .contenedorimagenes .fotoskits:hover {
     transform: scale(1.1, 1.1); }
   .contenedorimagenes .fotoapp {
@@ -98,11 +110,9 @@ tr {
     grid-area: fotoapp;
     position: relative;
     top: 13px; }
-  .contenedorimagenes .fotoskits {
-    width: 100%;
-    grid-area: fotoskits;
-    position: relative;
-    bottom: 80px; }
+    .contenedorimagenes .fotoapp .app {
+      width: 100%;
+      height: 580px; }
   .contenedorimagenes .marcas {
     width: 200%;
     border: solid;
@@ -110,10 +120,18 @@ tr {
     position: relative;
     bottom: 50px;
     left: 5%; }
+    .contenedorimagenes .marcas .wow {
+      width: 100%;
+      height: 355px; }
   .contenedorimagenes .fotobarbaybigote:hover,
   .contenedorimagenes .fotoofertas:hover,
   .contenedorimagenes .fotoskits:hover {
     border: solid white 1px; }
+
+/* Aca comienza  Main de páginas secundarias */
+.barbafotos1,
+.imgkit {
+  width: 370px; }
 
 /* Aca comienza Footer/Pie de pagina/Info */
 footer {
@@ -146,6 +164,12 @@ footer {
   text-align: center;
   position: relative;
   bottom: 30px; }
+  .redes .facebook {
+    width: 35px;
+    height: 35px; }
+  .redes .instagram {
+    width: 40px;
+    height: 40px; }
 
 .sociales {
   text-align: center;
@@ -258,11 +282,9 @@ h6 {
     width: 300px; }
   .boton1 {
     display: none; }
-  .login1 {
-    width: 100%; }
-    .login1 .login,
-    .login1 .registrarse {
-      font-size: medium; }
+  .login1 .login,
+  .login1 .registrarse {
+    font-size: xx-small; }
   .btn.btn.btn-outline-secondary {
     display: none; }
   .navaccesorios {
@@ -283,15 +305,18 @@ h6 {
 
 @media screen and (max-width: 768px) {
   video {
+    display: none; }
+  table {
     display: none; } }
 
 /* Aca comienza querries Mobile-375px */
 @media screen and (max-width: 375px) {
-  .login,
-  .registrarse {
-    font-size: x-small; }
-  table {
-    display: none; } }
+  header .menu-header .login1,
+  header .menu-header .login,
+  header .menu-header .registrarse {
+    font-size: xx-small; }
+  .logoimg2 {
+    width: 180px; } }
 
 @media screen and (max-width: 375px) {
   .grancontenedor {
@@ -311,9 +336,6 @@ h6 {
 @media screen and (max-width: 375px) {
   .accesorios {
     font-size: large; } }
-
-.construyendo {
-  font-size: smaller; }
 
 @media screen and (max-width: 375px) {
   .kitsfotos,
@@ -342,3 +364,6 @@ h6 {
     width: 100%;
     margin: 5px;
     padding: 5px; } }
+
+.paginaenproceso .construyendo {
+  font-size: 30px; }

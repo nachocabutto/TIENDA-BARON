@@ -1,7 +1,6 @@
-
 /* Aca comienza queries */
 
-@media screen and (max-width:1438px){
+@media screen and (max-width:1438px) {
     video {
         display: none;
     }
@@ -29,11 +28,10 @@
     }
 
     .login1 {
-        width: 100%;
 
         .login,
         .registrarse {
-            font-size: medium;
+            font-size: xx-small;
         }
     }
 
@@ -48,16 +46,17 @@
 
 
 @media screen and (max-width:768px) {
-    .grancontenedor{
+    .grancontenedor {
         height: 700px;
+
         .contenedorimagenes {
-            height:auto;
+            height: auto;
             grid-template-columns: auto;
             grid-template-rows: 1fr 1fr;
             grid-template-areas:
                 "fotoofertas"
                 "fotoskits";
-    
+
             .fotoapp,
             .marcas,
             .fotobarbaybigote {
@@ -71,6 +70,10 @@
     video {
         display: none;
     }
+
+    table {
+        display: none;
+    }
 }
 
 
@@ -78,26 +81,28 @@
 
 @media screen and (max-width:375px) {
 
-    .login,
-    .registrarse {
-        font-size: x-small;
+    header .menu-header .login1,
+    header .menu-header .login,
+    header .menu-header .registrarse {
+        font-size: xx-small;
     }
 
-    table {
-        display: none;
+    .logoimg2 {
+        width: 180px;
     }
 
 }
 
 @media screen and (max-width:375px) {
     .grancontenedor {
-        height: 360px;;
+        height: 360px;
+        ;
 
         .contenedorimagenes {
             height: 700px;
             padding: 0px;
             margin: 0px;
-            
+
 
             .img-ofertas,
             .img-kits {
@@ -121,9 +126,6 @@
     }
 }
 
-.construyendo {
-    font-size: smaller;
-}
 
 @media screen and (max-width:375px) {
 
@@ -170,4 +172,8 @@
         margin: 5px;
         padding: 5px;
     }
+}
+
+.paginaenproceso .construyendo {
+    font-size: 30px;
 }
